@@ -62,6 +62,57 @@ The problem of Haze removal is Mathematically Ambiguous a there are more number 
 
 The use of "Priors" is one of the methods to solve the ambiguity. Priors are "prior knowledge" that we use to solve the ambiguity, the DCP algorithm uses the "Dark Channel Prior", this prior assumed that every haze free pixel (with three color channels namely Red(R), Green(G), Blue(B)) has a color channel that has a lower value compared to other two, this can be understood intuitively as in a pixel with all three channels of high values it would be close to white color which is inferred as fog. this prior is used to find the treansperency of the medium at each pixel.
 
+The equation used to model the Haze is called "Haze Image Equation".
+
+<p align = "center">
+I(x) = J(x)t(x) + Ac(1 − t(x)).
+Haze Image Equation
+</p>
+
+In the above equation ‘x’ represents the coordinates (x, y), I represent the Image captured by the camera, ‘t’ represents the transmission map, ‘Ac ’represents the Atmospheric Light (where c ϵ R, G, B), ‘J’ represents the original scene radiance (image without haze).
+
+The problem of haze removal is mathematically ambiguous, considering an image of ‘N’ pixels, each having 3 channels (R, G, B) whose values are between 0 and 255, consequently each channel of a pixel will consist of 8 bits. Both I (image captured) and J (the value to compute) have 3N variables (thus forming 3n equations where I data is known and J data is unknown), t is representative of the transparency of the medium whose value lies between 0 and 1 (value 0 represents completely opaque and 1 represents completely transparent medium) thus making N unknowns, and Atmospheric Light has 3 unknowns (1 byte corresponding to each colour channel).
+
+Assimilating all of the variables described above,
+* Known data = 3N equations
+* Unknown data = 3N + N + 3 variables 
+It is evident that the number of unknowns us more than number of equations so this problem is mathematically ambiguous.
+
+The design is based on DCP (Dark Channel Prior) Algorithm. The haze attenuates the light reflected from the objects and also further blends it with some additive light in the atmosphere and making the problem of haze removal mathematically ambiguous (there are more unknowns than equations), to solve this problem priors are used, these are assumptions or statistical and physical properties known beforehand which are used to solve the ambiguity. The DCP algorithm uses the prior that all the pixels in an image without haze have at least one color channel whose intensity is low, thus determining haze effected areas in the image.
+
+The goal is to find the unknown variables in the haze image equation, for finding the value of Atmospheric Light, we consider the values of some of the highest brightness pixels in the image (generally estimated from 0.1% brightest pixels), for t we use “Dark Channel Prior Operator” which is a combination of 2 minimum operators, which finds the minimum of the three channels for a pixel(minc ϵ {R,G,B}) followed by a minimum operator which finds the minimum value present  in the window (generally taken 3 x 3, although bigger windows have higher probabilities of finding a darker pixel thus making transmission map more contentious, in some cases that can lead to block artifacts)(the designer may incorporate soft matting to improve the transmission map but  in our design we do not incorporate it as it will lead to additional power consumption). According to our prior the haze free pixels have at least one minimum channel and thus we can assume the following:
+
+<p align = "center">
+minc ϵ {R, G, B}(minx’ϵ Ω(x)(Jc(x’))) ≈ 0
+</p>
+
+The expression shows the dark channel prior applied on the haze free image (Ω represents the 3 x 3 window and x’ represents the coordinates of the pixels within the window), 
+using this and applying the DCP operator on the haze image equation and solving for t we get:
+
+<p align = "center">
+t(x) = 1 - (minc ϵ {R, G, B}( minx’ϵ Ω(x)( Ic(x’) ) ) ) / Ac
+</p>
+
+We can write it in simple terms as:
+
+<p align = "center">
+t(x) = 1 -  Idark
+</p>
+  
+Idark is called the dark channel of the image which is subsequently used to find the transmission map of the image as shown above. Here we may introduce another parameter ω (0 < ω < 1) which will control the amount of fog being removed (0 representing none and 1 representing complete haze removal), this will help us to adjust the contrast of the image and prevent the image from being over-saturated. Thus, the equation for ‘t’ becomes:
+
+<p align = "center">
+t(x) = 1 - (ω * Idark)
+</p> 
+ 
+Now that we have the ‘t’ and ‘Ac’ values we can substitute them in the haze image equation and find the “I(x)” as follows (t0 generally 0.25):
+
+<p align = "center">
+![Picture3](https://user-images.githubusercontent.com/50233470/169224788-f6a3429d-6510-4a2d-bec6-a25ce8980920.png)
+</p>
+
+
+
 ## MATLAB Simulation Results
 
 Before designing the chip, the algorithm was tested on matlab.
