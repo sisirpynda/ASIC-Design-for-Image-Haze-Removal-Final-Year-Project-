@@ -107,10 +107,10 @@ t(x) = 1 - (ω * Idark)
  
 Now that we have the ‘t’ and ‘Ac’ values we can substitute them in the haze image equation and find the “I(x)” as follows (t0 generally 0.25):
 
-![Picture3](https://user-images.githubusercontent.com/50233470/169224788-f6a3429d-6510-4a2d-bec6-a25ce8980920.png)
 
-<img align = "center" src = "https://user-images.githubusercontent.com/50233470/169224788-f6a3429d-6510-4a2d-bec6-a25ce8980920.png">
-
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/50233470/169224788-f6a3429d-6510-4a2d-bec6-a25ce8980920.png">
+</p>
 
 
 
