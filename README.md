@@ -130,7 +130,7 @@ Simulation Results : Intermidiate variables
 
 ## Simulation Results from Xcelium
 
-Test Images used:
+### Test Images used:
 
 ![ti1](https://user-images.githubusercontent.com/50233470/169229041-62d36e01-52f6-4638-a582-dd42111c26c4.png)
 
@@ -144,5 +144,5 @@ Test Images used:
   Test Image 2
 </p>
 
-
+### Simulation Results for Test Image 1:
 
