@@ -55,3 +55,9 @@ The logical synthesis of the DUT was done to produce net-list using Cadence Genu
 * Gensus: To address the problem of design, productivity gap in the industry Cadence offers Genus Synthesis tool, it runs both legacy mode and common UI mode, the common UI mode is particularly useful as the interface is same across the other tools like tempus, voltus, joules which assist in coming  up with the optimum netlist meeting the performance requirements.
 
 * IMC: Integrated Metrics Center (IMC) is the analysis tool used to analyze, merge, and report coverage data. 
+
+## Dark Channel Prior Algorithm (DCP Algorithm)
+
+The problem of Haze removal is Mathematically Ambiguous a there are more number of unknowns than number of equations. To solve this ambiguity we estimate some of the unknown values using statictical analysis, Physical properties of objects, assumptions from common knowledge, etc.
+
+The use of "Priors" is one of the methods to solve the ambiguity. Priors are "prior knowledge" that we use to solve the ambiguity, the DCP algorithm uses the "Dark Channel Prior", this prior assumed that every haze free pixel (with three color channels namely Red(R), Green(G), Blue(B)) has a color channel that has a lower value compared to other two, this can be understood intuitively as in a pixel with all three channels of high values it would be close to white color which is inferred as fog. this prior is used to find the treansperency of the medium at each pixel.
