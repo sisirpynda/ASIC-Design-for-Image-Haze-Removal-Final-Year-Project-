@@ -131,8 +131,8 @@ Simulation Results : Intermidiate variables
 ## Simulation Results from Xcelium
 
 Test Images used:
-![ti1](https://user-images.githubusercontent.com/50233470/169228717-c58![ti2](https://user-images.githubusercontent.com/50233470/169228765-c0cf8c24-8d66-4ec3-aa15-81798f07cd06.png)
-58222-6f16-45f9-9298-6726349b444e.png)
+
+![ti1](https://user-images.githubusercontent.com/50233470/169229041-62d36e01-52f6-4638-a582-dd42111c26c4.png)
 
 <p align = "center">
   Test Image 1
