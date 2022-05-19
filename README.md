@@ -34,6 +34,9 @@ In order to meet the above needs we use ASICs to carry out this computation.
 Reasons for using  ASICs for Haze Removal:
 
 * Most Image Processing Operations are complex calculations that use various matrices and their multiplications, this is often time consuming.
+
 * Real time applications like Drones, Computer vision, IoT, etc. are often small and operate on batteries, Haze Removal is an important preprocessing step that helps them operate in haze environments. Many solutions to this exist in the form of usage of high visibility lights, sending images to base station to process them, etc.
+
 * This makes them less scalable, not ideal for time critical applications and a natural need for a cheep, small, modular solution arises that can easily take care of the job.
+
 * The ASICs can be hardwired to carry on these matrix applications, techniques like pipelining can be used to reduce delay caused by the intermediary chip, Low power techniques can be used to reduce load on the battery.
