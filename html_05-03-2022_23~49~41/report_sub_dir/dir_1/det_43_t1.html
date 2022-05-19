@@ -1,0 +1,453 @@
+<HTML>
+<HEAD>
+<link type="text/css" rel="stylesheet" href="../../imc.css"></link>
+<script type="text/javascript" src="../../sortable.js"></script>
+<TITLE>IMC Report: html_05-03-2022_23~49~41</TITLE></HEAD>
+<BODY>
+<A NAME="_topcov"></A>
+<P class="summary_title">Coverage   Summary Report, Instance-Based</P>
+
+<P class="fs"><A STYLE="float: left" class="namet" HREF="../../index.html">Top Level Summary</A><A STYLE="float: right" class="namet" HREF="../../legend.html">Legend and Help</A></P>
+<BR>
+<TABLE class="detail_header"><TR class="detail"><TD>
+
+<B>Instance name: </B><A HREF="../dir_1/summ_0_t1.html" class="namet">test_top</A><A HREF="../dir_1/summ_1_t1.html" class="namet">.dut</A><A HREF="../dir_1/summ_42_t1.html" class="namet">.dale</A>.lalc<BR>
+
+<B>Type name: </B>local_atmospheric_light_calculation_alternate<BR>
+
+<B>File name: </B><A HREF="/servers/scratch50g/sisir/project_backup/sub_blocks/local_atmospheric_light_calculation_alternate.v" TARGET="_blank">/servers/scratch50g/sisir/project_backup/sub_blocks/local_atmospheric_light_calculation_alternate.v</A><BR>
+
+</TD></TR></TABLE>
+
+<BR>
+<P class="subtitle">Coverage Summary Report, Instance-Based</P>
+<TABLE class="sortable sml summary_table" id="totalTable">
+
+
+<TR><TH class="wht">Block</TH>
+<TH class="wht">Expression</TH>
+<TH class="wht">Toggle</TH>
+<TH class="wht">Statement</TH>
+<TH class="wht">Fsm</TH>
+<TH class="wht">Fsm Covered</TH>
+<TH class="wht">Assertion</TH>
+<TH class="wht">CoverGroup</TH>
+<TH class="wht">CoverGroup Covered</TH>
+<TH class="wht">name</TH>
+
+</TR>
+
+<TR><TD class="range100"><A HREF="#_Blockcov">100.00%&nbsp;(5/5)</A></TD>
+<TD class="range100"><A HREF="#_Expressioncov">100.00%&nbsp;(3/3)</A></TD>
+<TD class="range85to89"><A HREF="#_Togglecov">88.96%&nbsp;(274/308)</A></TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="namecell">lalc</TD>
+
+</TR>
+
+
+</TABLE>
+<A NAME="_Blockcov"></A>
+<P class="detail_title">     Covered Block Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>test_top.dut.dale.lalc<BR>
+<B>Type name: </B>local_atmospheric_light_calculation_alternate<BR>
+<B>File name: </B><A HREF="/servers/scratch50g/sisir/project_backup/sub_blocks/local_atmospheric_light_calculation_alternate.v" TARGET="_blank">/servers/scratch50g/sisir/project_backup/sub_blocks/local_atmospheric_light_calculation_alternate.v</A><BR><B>Number of covered blocks: </B>5 of 5<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Count  Block Line  Kind                 Origin Source Code                    
+------------------------------------------------------------------------------
+1      1     71    code block           70     begin                          
+1      2     73    true part of         72     begin                          
+1      3     79    false part of        72     else if (2'd2*Th_dark &gt; I_dark && I_dark &gt;= Th_dark) 
+1      4     80    true part of         79     begin                          
+1      5     88    false part of        79     begin                          
+
+</PRE>
+<A NAME="_Expressioncov"></A>
+<P class="detail_title">     Covered Expression Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>test_top.dut.dale.lalc<BR>
+<B>Type name: </B>local_atmospheric_light_calculation_alternate<BR>
+<B>File name: </B><A HREF="/servers/scratch50g/sisir/project_backup/sub_blocks/local_atmospheric_light_calculation_alternate.v" TARGET="_blank">/servers/scratch50g/sisir/project_backup/sub_blocks/local_atmospheric_light_calculation_alternate.v</A><BR><B>Number of covered expressions: </B>3 of 3<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+index  | grade         | line   | expression                                         
+-------------------------------------------------------------------------------------
+1.1    | 100.00% (3/3) | 79     | ((2'd2 * Th_dark) &gt; I_dark) && (I_dark &gt;= Th_dark) 
+
+<B>index: </B><B>1.1</B><B> grade: </B><B>100.00% (3/3)</B><B> line: </B><B>79</B><B> source: </B><B>else if (2'd2*Th_dark > I_dark && I_dark >= Th_dark)</B>
+
+((2'd2 * Th_dark) > I_dark) && (I_dark >= Th_dark)<BR>
+<B><</B>------------<B>1</B>------------<B>></B>    <B><</B>--------<B>2</B>--------<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '&&'
+1.1.1     | 1     | 0   -   
+1.1.2     | 1     | -   0   
+1.1.3     | 1     | 1   1   
+
+
+</PRE>
+<A NAME="_Togglecov"></A>
+<P class="detail_title">     Covered Toggle Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>test_top.dut.dale.lalc<BR>
+<B>Type name: </B>local_atmospheric_light_calculation_alternate<BR>
+<B>File name: </B><A HREF="/servers/scratch50g/sisir/project_backup/sub_blocks/local_atmospheric_light_calculation_alternate.v" TARGET="_blank">/servers/scratch50g/sisir/project_backup/sub_blocks/local_atmospheric_light_calculation_alternate.v</A><BR><B>Number of covered signal bits: </B>274 of 308<BR>
+<B>Number of signal bits partially toggled(rise): </B>18 of 308<BR>
+<B>Number of signal bits partially toggled(fall): </B>9 of 308<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Hit(Full)  Hit(Rise)  Hit(Fall)  Signal                    
+-----------------------------------------------------------
+1          1          1          Ar_global[6]              
+1          1          1          Ar_global[5]              
+1          1          1          Ar_global[4]              
+1          1          1          Ar_global[3]              
+1          1          1          Ar_global[2]              
+1          1          1          Ar_global[1]              
+1          1          1          Ar_global[0]              
+1          1          1          Ag_global[5]              
+1          1          1          Ag_global[4]              
+1          1          1          Ag_global[3]              
+1          1          1          Ag_global[2]              
+1          1          1          Ag_global[1]              
+1          1          1          Ag_global[0]              
+1          1          1          Ab_global[6]              
+1          1          1          Ab_global[5]              
+1          1          1          Ab_global[4]              
+1          1          1          Ab_global[3]              
+1          1          1          Ab_global[2]              
+1          1          1          Ab_global[1]              
+1          1          1          Ab_global[0]              
+1          1          1          I_dark[7]                 
+1          1          1          I_dark[6]                 
+1          1          1          I_dark[5]                 
+1          1          1          I_dark[4]                 
+1          1          1          I_dark[3]                 
+1          1          1          I_dark[2]                 
+1          1          1          I_dark[1]                 
+1          1          1          I_dark[0]                 
+1          1          1          clk                       
+1          1          1          Ar_local[7]               
+1          1          1          Ar_local[6]               
+1          1          1          Ar_local[5]               
+1          1          1          Ar_local[4]               
+1          1          1          Ar_local[3]               
+1          1          1          Ar_local[2]               
+1          1          1          Ar_local[1]               
+1          1          1          Ar_local[0]               
+1          1          1          Ag_local[7]               
+1          1          1          Ag_local[6]               
+1          1          1          Ag_local[5]               
+1          1          1          Ag_local[4]               
+1          1          1          Ag_local[3]               
+1          1          1          Ag_local[2]               
+1          1          1          Ag_local[1]               
+1          1          1          Ag_local[0]               
+1          1          1          Ab_local[7]               
+1          1          1          Ab_local[6]               
+1          1          1          Ab_local[5]               
+1          1          1          Ab_local[4]               
+1          1          1          Ab_local[3]               
+1          1          1          Ab_local[2]               
+1          1          1          Ab_local[1]               
+1          1          1          Ab_local[0]               
+1          1          1          Ar_go[6]                  
+1          1          1          Ar_go[5]                  
+1          1          1          Ar_go[4]                  
+1          1          1          Ar_go[3]                  
+1          1          1          Ar_go[2]                  
+1          1          1          Ar_go[1]                  
+1          1          1          Ar_go[0]                  
+1          1          1          Ag_go[5]                  
+1          1          1          Ag_go[4]                  
+1          1          1          Ag_go[3]                  
+1          1          1          Ag_go[2]                  
+1          1          1          Ag_go[1]                  
+1          1          1          Ag_go[0]                  
+1          1          1          Ab_go[6]                  
+1          1          1          Ab_go[5]                  
+1          1          1          Ab_go[4]                  
+1          1          1          Ab_go[3]                  
+1          1          1          Ab_go[2]                  
+1          1          1          Ab_go[1]                  
+1          1          1          Ab_go[0]                  
+1          1          1          Ar_dark[5]                
+1          1          1          Ar_dark[4]                
+1          1          1          Ar_dark[3]                
+1          1          1          Ar_dark[2]                
+1          1          1          Ar_dark[1]                
+1          1          1          Ar_dark[0]                
+1          1          1          Ag_dark[5]                
+1          1          1          Ag_dark[4]                
+1          1          1          Ag_dark[3]                
+1          1          1          Ag_dark[2]                
+1          1          1          Ag_dark[1]                
+1          1          1          Ag_dark[0]                
+1          1          1          Ab_dark[5]                
+1          1          1          Ab_dark[4]                
+1          1          1          Ab_dark[3]                
+1          1          1          Ab_dark[2]                
+1          1          1          Ab_dark[1]                
+1          1          1          Ab_dark[0]                
+1          1          1          Ar_darko[5]               
+1          1          1          Ar_darko[4]               
+1          1          1          Ar_darko[3]               
+1          1          1          Ar_darko[2]               
+1          1          1          Ar_darko[1]               
+1          1          1          Ar_darko[0]               
+1          1          1          Ag_darko[5]               
+1          1          1          Ag_darko[4]               
+1          1          1          Ag_darko[3]               
+1          1          1          Ag_darko[2]               
+1          1          1          Ag_darko[1]               
+1          1          1          Ag_darko[0]               
+1          1          1          Ab_darko[5]               
+1          1          1          Ab_darko[4]               
+1          1          1          Ab_darko[3]               
+1          1          1          Ab_darko[2]               
+1          1          1          Ab_darko[1]               
+1          1          1          Ab_darko[0]               
+1          1          1          Ar_go_o[6]                
+1          1          1          Ar_go_o[5]                
+1          1          1          Ar_go_o[4]                
+1          1          1          Ar_go_o[3]                
+1          1          1          Ar_go_o[2]                
+1          1          1          Ar_go_o[1]                
+1          1          1          Ar_go_o[0]                
+1          1          1          Ag_go_o[5]                
+1          1          1          Ag_go_o[4]                
+1          1          1          Ag_go_o[3]                
+1          1          1          Ag_go_o[2]                
+1          1          1          Ag_go_o[1]                
+1          1          1          Ag_go_o[0]                
+1          1          1          Ab_go_o[6]                
+1          1          1          Ab_go_o[5]                
+1          1          1          Ab_go_o[4]                
+1          1          1          Ab_go_o[3]                
+1          1          1          Ab_go_o[2]                
+1          1          1          Ab_go_o[1]                
+1          1          1          Ab_go_o[0]                
+1          1          1          w_min[6]                  
+1          1          1          w_min[5]                  
+1          1          1          w_min[4]                  
+1          1          1          w_min[3]                  
+1          1          1          w_min[2]                  
+1          1          1          w_min[1]                  
+1          1          1          w_min[0]                  
+1          1          1          w_mino[6]                 
+1          1          1          w_mino[5]                 
+1          1          1          w_mino[4]                 
+1          1          1          w_mino[3]                 
+1          1          1          w_mino[2]                 
+1          1          1          w_mino[1]                 
+1          1          1          w_mino[0]                 
+1          1          1          dark_diff[7]              
+1          1          1          dark_diff[6]              
+1          1          1          dark_diff[5]              
+1          1          1          dark_diff[4]              
+1          1          1          dark_diff[3]              
+1          1          1          dark_diff[2]              
+1          1          1          dark_diff[1]              
+1          1          1          dark_diff[0]              
+1          1          1          Th_dark[5]                
+1          1          1          Th_dark[4]                
+1          1          1          Th_dark[3]                
+1          1          1          Th_dark[2]                
+1          1          1          Th_dark[1]                
+1          1          1          Th_dark[0]                
+1          1          1          al[6]                     
+1          1          1          al[5]                     
+1          1          1          al[4]                     
+1          1          1          al[3]                     
+1          1          1          al[2]                     
+1          1          1          al[1]                     
+1          1          1          al[0]                     
+1          1          1          one_minus_al[7]           
+1          1          1          one_minus_al[6]           
+1          1          1          one_minus_al[5]           
+1          1          1          one_minus_al[4]           
+1          1          1          one_minus_al[3]           
+1          1          1          one_minus_al[2]           
+1          1          1          one_minus_al[1]           
+1          1          1          one_minus_al[0]           
+1          1          1          Ar_alpha_o[7]             
+1          1          1          Ar_alpha_o[6]             
+1          1          1          Ar_alpha_o[5]             
+1          1          1          Ar_alpha_o[4]             
+1          1          1          Ar_alpha_o[3]             
+1          1          1          Ar_alpha_o[2]             
+1          1          1          Ar_alpha_o[1]             
+1          1          1          Ar_alpha_o[0]             
+1          1          1          Ag_alpha_o[7]             
+1          1          1          Ag_alpha_o[6]             
+1          1          1          Ag_alpha_o[5]             
+1          1          1          Ag_alpha_o[4]             
+1          1          1          Ag_alpha_o[3]             
+1          1          1          Ag_alpha_o[2]             
+1          1          1          Ag_alpha_o[1]             
+1          1          1          Ag_alpha_o[0]             
+1          1          1          Ab_alpha_o[7]             
+1          1          1          Ab_alpha_o[6]             
+1          1          1          Ab_alpha_o[5]             
+1          1          1          Ab_alpha_o[4]             
+1          1          1          Ab_alpha_o[3]             
+1          1          1          Ab_alpha_o[2]             
+1          1          1          Ab_alpha_o[1]             
+1          1          1          Ab_alpha_o[0]             
+1          1          1          Ar_alpha_s1[15]           
+1          1          1          Ar_alpha_s1[14]           
+1          1          1          Ar_alpha_s1[13]           
+1          1          1          Ar_alpha_s1[12]           
+1          1          1          Ar_alpha_s1[11]           
+1          1          1          Ar_alpha_s1[10]           
+1          1          1          Ar_alpha_s1[9]            
+1          1          1          Ar_alpha_s1[8]            
+1          1          1          Ar_alpha_s1[7]            
+1          1          1          Ar_alpha_s1[6]            
+1          1          1          Ar_alpha_s1[5]            
+1          1          1          Ar_alpha_s1[4]            
+1          1          1          Ar_alpha_s1[3]            
+1          1          1          Ar_alpha_s1[2]            
+1          1          1          Ar_alpha_s1[1]            
+1          1          1          Ar_alpha_s1[0]            
+1          1          1          Ag_alpha_s1[15]           
+1          1          1          Ag_alpha_s1[14]           
+1          1          1          Ag_alpha_s1[13]           
+1          1          1          Ag_alpha_s1[12]           
+1          1          1          Ag_alpha_s1[11]           
+1          1          1          Ag_alpha_s1[10]           
+1          1          1          Ag_alpha_s1[9]            
+1          1          1          Ag_alpha_s1[8]            
+1          1          1          Ag_alpha_s1[7]            
+1          1          1          Ag_alpha_s1[6]            
+1          1          1          Ag_alpha_s1[5]            
+1          1          1          Ag_alpha_s1[4]            
+1          1          1          Ag_alpha_s1[3]            
+1          1          1          Ag_alpha_s1[2]            
+1          1          1          Ag_alpha_s1[1]            
+1          1          1          Ag_alpha_s1[0]            
+1          1          1          Ab_alpha_s1[15]           
+1          1          1          Ab_alpha_s1[14]           
+1          1          1          Ab_alpha_s1[13]           
+1          1          1          Ab_alpha_s1[12]           
+1          1          1          Ab_alpha_s1[11]           
+1          1          1          Ab_alpha_s1[10]           
+1          1          1          Ab_alpha_s1[9]            
+1          1          1          Ab_alpha_s1[8]            
+1          1          1          Ab_alpha_s1[7]            
+1          1          1          Ab_alpha_s1[6]            
+1          1          1          Ab_alpha_s1[5]            
+1          1          1          Ab_alpha_s1[4]            
+1          1          1          Ab_alpha_s1[3]            
+1          1          1          Ab_alpha_s1[2]            
+1          1          1          Ab_alpha_s1[1]            
+1          1          1          Ab_alpha_s1[0]            
+1          1          1          alt_varr[9]               
+1          1          1          alt_varr[8]               
+1          1          1          alt_varr[7]               
+1          1          1          alt_varr[6]               
+1          1          1          alt_varr[5]               
+1          1          1          alt_varr[4]               
+1          1          1          alt_varr[3]               
+1          1          1          alt_varr[2]               
+1          1          1          alt_varr[1]               
+1          1          1          alt_varr[0]               
+1          1          1          alt_varg[9]               
+1          1          1          alt_varg[8]               
+1          1          1          alt_varg[7]               
+1          1          1          alt_varg[6]               
+1          1          1          alt_varg[5]               
+1          1          1          alt_varg[4]               
+1          1          1          alt_varg[3]               
+1          1          1          alt_varg[2]               
+1          1          1          alt_varg[1]               
+1          1          1          alt_varg[0]               
+1          1          1          alt_varb[9]               
+1          1          1          alt_varb[8]               
+1          1          1          alt_varb[7]               
+1          1          1          alt_varb[6]               
+1          1          1          alt_varb[5]               
+1          1          1          alt_varb[4]               
+1          1          1          alt_varb[3]               
+1          1          1          alt_varb[2]               
+1          1          1          alt_varb[1]               
+1          1          1          alt_varb[0]               
+
+</PRE>
+<A NAME="_Fsmcov"></A>
+<P class="detail_title">     Covered Fsm Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>test_top.dut.dale.lalc<BR>
+<B>Type name: </B>local_atmospheric_light_calculation_alternate<BR>
+<B>File name: </B><A HREF="/servers/scratch50g/sisir/project_backup/sub_blocks/local_atmospheric_light_calculation_alternate.v" TARGET="_blank">/servers/scratch50g/sisir/project_backup/sub_blocks/local_atmospheric_light_calculation_alternate.v</A><BR>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>
+<A NAME="_Assertioncov"></A>
+<P class="detail_title">     Covered Assertion Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>test_top.dut.dale.lalc<BR>
+<B>Type name: </B>local_atmospheric_light_calculation_alternate<BR>
+<B>File name: </B><A HREF="/servers/scratch50g/sisir/project_backup/sub_blocks/local_atmospheric_light_calculation_alternate.v" TARGET="_blank">/servers/scratch50g/sisir/project_backup/sub_blocks/local_atmospheric_light_calculation_alternate.v</A><BR><B>Number of covered assertions: </B>0 of 0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Finished Failed Assertion                      Line  Source Code                    
+------------------------------------------------------------------------------------
+
+0 items found
+
+</PRE>
+<A NAME="_CoverGroupcov"></A>
+<P class="detail_title">     Covered CoverGroup Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>test_top.dut.dale.lalc<BR>
+<B>Type name: </B>local_atmospheric_light_calculation_alternate<BR>
+<B>File name: </B><A HREF="/servers/scratch50g/sisir/project_backup/sub_blocks/local_atmospheric_light_calculation_alternate.v" TARGET="_blank">/servers/scratch50g/sisir/project_backup/sub_blocks/local_atmospheric_light_calculation_alternate.v</A><BR><B>Number of covered cover bins: </B>0 of 0<BR>
+
+
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>
