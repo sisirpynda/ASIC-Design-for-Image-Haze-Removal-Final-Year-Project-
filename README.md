@@ -13,7 +13,7 @@ Vellore Institute of Technology, Vellore (SENSE School).
 * Abstract
 * Tools Used
 * Dark Channel Prior Algorithm
-* MATLAB Simulation results
+* MATLAB Simulation Results
 * Simulation Results from Xcelium
 * IMC Coverage Analysis
 * Genus Synthesis
@@ -61,3 +61,12 @@ The logical synthesis of the DUT was done to produce net-list using Cadence Genu
 The problem of Haze removal is Mathematically Ambiguous a there are more number of unknowns than number of equations. To solve this ambiguity we estimate some of the unknown values using statictical analysis, Physical properties of objects, assumptions from common knowledge, etc.
 
 The use of "Priors" is one of the methods to solve the ambiguity. Priors are "prior knowledge" that we use to solve the ambiguity, the DCP algorithm uses the "Dark Channel Prior", this prior assumed that every haze free pixel (with three color channels namely Red(R), Green(G), Blue(B)) has a color channel that has a lower value compared to other two, this can be understood intuitively as in a pixel with all three channels of high values it would be close to white color which is inferred as fog. this prior is used to find the treansperency of the medium at each pixel.
+
+## MATLAB Simulation Results
+
+Before designing the chip, the algorithm was tested on matlab.
+the results are as follows:
+![Picture2](https://user-images.githubusercontent.com/50233470/169220688-1b37372d-f58d-41a3-af38-faf76464c149.png)
+![Picture1](https://user-images.githubusercontent.com/50233470/169220695-002e694a-3420-4f6b-ba5d-d434d463b181.png)
+
+
