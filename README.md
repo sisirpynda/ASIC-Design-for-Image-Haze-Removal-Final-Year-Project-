@@ -13,6 +13,7 @@ Vellore Institute of Technology, Vellore (SENSE School).
 * Abstract
 * Tools Used
 * Dark Channel Prior Algorithm
+* Proposed Architecture
 * MATLAB Simulation Results
 * Simulation Results from Xcelium
 * IMC Coverage Analysis
@@ -146,3 +147,16 @@ Simulation Results : Intermidiate variables
 
 ### Simulation Results for Test Image 1:
 
+![t1r1](https://user-images.githubusercontent.com/50233470/169236309-98fcd67c-a1aa-4f87-bd52-6419e63eb114.png)
+
+<p align = "center">
+  Low Power Mode Output
+</p>
+
+![t1r2](https://user-images.githubusercontent.com/50233470/169236343-b86725eb-8334-46bb-98c8-ff932e68ea26.png)
+
+<p align = "center">
+  Normal Mode Output
+</p>
+
+As it can seen, the low power mode output seems patchy and discontinuous while normal mode (where interpolation is used) is continous.
