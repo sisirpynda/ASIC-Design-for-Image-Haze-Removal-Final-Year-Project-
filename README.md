@@ -128,4 +128,21 @@ Simulation Results : Haze Free Image
 Simulation Results : Intermidiate variables
 </p>
 
+## Simulation Results from Xcelium
+
+Test Images used:
+![ti1](https://user-images.githubusercontent.com/50233470/169228717-c58![ti2](https://user-images.githubusercontent.com/50233470/169228765-c0cf8c24-8d66-4ec3-aa15-81798f07cd06.png)
+58222-6f16-45f9-9298-6726349b444e.png)
+
+<p align = "center">
+  Test Image 1
+</p>
+
+![ti2](https://user-images.githubusercontent.com/50233470/169228910-529197b8-3cdf-4e9e-97c3-2e076281cde0.png)
+
+<p align = "center">
+  Test Image 2
+</p>
+
+
 
