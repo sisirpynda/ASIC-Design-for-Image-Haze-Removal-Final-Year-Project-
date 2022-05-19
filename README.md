@@ -66,7 +66,7 @@ The use of "Priors" is one of the methods to solve the ambiguity. Priors are "pr
 
 Before designing the chip, the algorithm was tested on matlab.
 the results are as follows:
-![Picture2](https://user-images.githubusercontent.com/50233470/169220688-1b37372d-f58d-41a3-af38-faf76464c149.png)
-![Picture1](https://user-images.githubusercontent.com/50233470/169220695-002e694a-3420-4f6b-ba5d-d434d463b181.png)
+![Simulation Results : Haze Free Image](https://user-images.githubusercontent.com/50233470/169220688-1b37372d-f58d-41a3-af38-faf76464c149.png)
+![Simulation Results : Intermidiate variables](https://user-images.githubusercontent.com/50233470/169220695-002e694a-3420-4f6b-ba5d-d434d463b181.png)
 
 
